@@ -1,9 +1,4 @@
-/*
- *= require_tree .
- *= require_self
- */
 
-/* General layout */
 body {
   background-color: #f8f9fa;
   font-family: 'Segoe UI', sans-serif;
@@ -11,7 +6,6 @@ body {
   padding: 0;
 }
 
-/* Container */
 .container {
   max-width: 600px;
   margin: 80px auto;
@@ -21,14 +15,14 @@ body {
   box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
 }
 
-/* Headings */
+
 h1, h2 {
   color: #343a40;
   margin-bottom: 20px;
   text-align: center;
 }
 
-/* Form */
+
 form div {
   margin-bottom: 15px;
 }
@@ -59,7 +53,6 @@ input[type="submit"]:hover {
   background-color: #0056b3;
 }
 
-/* Links */
 a {
   color: #007bff;
   text-decoration: none;
@@ -69,7 +62,7 @@ a:hover {
   text-decoration: underline;
 }
 
-/* Flash messages */
+
 .notice {
   background-color: #d4edda;
   color: #155724;
@@ -90,7 +83,7 @@ a:hover {
   max-width: 600px;
 }
 
-/* Home Page Styling */
+
 .home-container {
   text-align: center;
   margin-top: 100px;
@@ -122,7 +115,7 @@ a:hover {
   margin-top: 20px;
 }
 
-/* Reusable Buttons */
+
 .btn {
   display: inline-block;
   padding: 10px 20px;
@@ -133,7 +126,6 @@ a:hover {
   transition: background-color 0.2s ease;
 }
 
-/* Specific button colors */
 .btn.login {
   background-color: #007bff;
 }
@@ -157,14 +149,14 @@ a:hover {
 .btn.logout:hover {
   background-color: #a71d2a;
 }
-/* 🔧 Fix for user info layout in header */
+
 .user-info {
   display: flex;
   align-items: center;
   gap: 15px;
 }
 
-/* Styling the logout button to match rest of the app */
+
 .logout-button {
   background-color: #ffc107;
   color: #343a40;
@@ -181,7 +173,6 @@ a:hover {
   background-color: #e0a800;
 }
 
-/* Dashboard Header/Footer */
 .header {
   background: #343a40;
   color: white;
@@ -191,7 +182,6 @@ a:hover {
   align-items: center;
 }
 
-/* 🔧 Fixed: Centered footer text */
 .footer {
   background: #343a40;
   color: white;
@@ -216,7 +206,7 @@ a:hover {
   text-decoration: underline;
 }
 
-/* Header & App Title */
+
 .app-title {
   font-size: 24px;
   font-weight: bold;
@@ -227,7 +217,7 @@ a:hover {
   margin-right: 20px;
 }
 
-/* Greeting Text */
+
 .greeting {
   font-size: 22px;
   color: #444;
@@ -235,7 +225,6 @@ a:hover {
   margin-bottom: 25px;
 }
 
-/* Main To-Do Content - Clean layout */
 .main-content {
   max-width: 600px;
   margin: 40px auto 100px;
@@ -245,7 +234,7 @@ a:hover {
   border-radius: 0;
 }
 
-/* Todo Form */
+
 .todo-form .form-column {
   display: flex;
   flex-direction: column;
@@ -258,7 +247,7 @@ a:hover {
   font-size: 16px;
 }
 
-/* 🔧 Updated: smaller, centered Add Todo button */
+
 .add-button {
   align-self: center;
   width: auto;
@@ -276,17 +265,17 @@ a:hover {
   background-color: #0056b3;
 }
 
-/* Tabs */
+
 .tabs {
   display: flex;
-  justify-content: center;     /* Center horizontally */
-  align-items: center;         /* Align vertically */
-  gap: 30px;                   /* Space between tabs */
+  justify-content: center;
+  align-items: center;       
+  gap: 30px;                  
   margin: 30px auto 20px;
-  flex-wrap: wrap;             /* Ensure mobile responsiveness */
+  flex-wrap: wrap;           
 }
 
-/* Tab Links */
+
 .tab {
   font-weight: 600;
   font-size: 16px;
@@ -308,8 +297,6 @@ a:hover {
 }
 
 
-
-/* To-Do List Styling */
 .todo-list {
   margin-top: 20px;
   list-style: none;
@@ -337,7 +324,6 @@ a:hover {
   color: #28a745;
 }
 
-/* To-Do Buttons */
 .btn.complete-btn {
   background: #28a745;
   color: white;
