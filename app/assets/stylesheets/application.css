@@ -1,0 +1,365 @@
+/*
+ *= require_tree .
+ *= require_self
+ */
+
+/* General layout */
+body {
+  background-color: #f8f9fa;
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Container */
+.container {
+  max-width: 600px;
+  margin: 80px auto;
+  padding: 40px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Headings */
+h1, h2 {
+  color: #343a40;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Form */
+form div {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input[type="email"],
+input[type="password"],
+input[type="text"],
+input[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+}
+
+input[type="submit"] {
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+/* Links */
+a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Flash messages */
+.notice {
+  background-color: #d4edda;
+  color: #155724;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+  margin: 20px auto;
+  max-width: 600px;
+}
+
+.alert {
+  background-color: #f8d7da;
+  color: #721c24;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+  margin: 20px auto;
+  max-width: 600px;
+}
+
+/* Home Page Styling */
+.home-container {
+  text-align: center;
+  margin-top: 100px;
+  padding: 30px;
+  background-color: #ffffff;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+}
+
+.home-container h1 {
+  font-size: 32px;
+  color: #343a40;
+  margin-bottom: 20px;
+}
+
+.info-text {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.btn-group {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+/* Reusable Buttons */
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 6px;
+  font-weight: bold;
+  text-decoration: none;
+  color: white;
+  transition: background-color 0.2s ease;
+}
+
+/* Specific button colors */
+.btn.login {
+  background-color: #007bff;
+}
+
+.btn.login:hover {
+  background-color: #0056b3;
+}
+
+.btn.signup {
+  background-color: #28a745;
+}
+
+.btn.signup:hover {
+  background-color: #1e7e34;
+}
+
+.btn.logout {
+  background-color: #dc3545;
+}
+
+.btn.logout:hover {
+  background-color: #a71d2a;
+}
+/* 🔧 Fix for user info layout in header */
+.user-info {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+/* Styling the logout button to match rest of the app */
+.logout-button {
+  background-color: #ffc107;
+  color: #343a40;
+  padding: 6px 14px;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.logout-button:hover {
+  background-color: #e0a800;
+}
+
+/* Dashboard Header/Footer */
+.header {
+  background: #343a40;
+  color: white;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* 🔧 Fixed: Centered footer text */
+.footer {
+  background: #343a40;
+  color: white;
+  padding: 15px 20px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  font-size: 14px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logout-link {
+  color: #ffc107;
+  text-decoration: none;
+}
+
+.logout-link:hover {
+  color: #e0a800;
+  text-decoration: underline;
+}
+
+/* Header & App Title */
+.app-title {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.welcome-msg {
+  font-weight: 500;
+  margin-right: 20px;
+}
+
+/* Greeting Text */
+.greeting {
+  font-size: 22px;
+  color: #444;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+/* Main To-Do Content - Clean layout */
+.main-content {
+  max-width: 600px;
+  margin: 40px auto 100px;
+  padding: 0 20px;
+  background: transparent;
+  box-shadow: none;
+  border-radius: 0;
+}
+
+/* Todo Form */
+.todo-form .form-column {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.todo-form input[type="text"] {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+}
+
+/* 🔧 Updated: smaller, centered Add Todo button */
+.add-button {
+  align-self: center;
+  width: auto;
+  padding: 6px 14px;
+  font-size: 14px;
+  background-color: #49637f;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.add-button:hover {
+  background-color: #0056b3;
+}
+
+/* Tabs */
+.tabs {
+  display: flex;
+  justify-content: center;     /* Center horizontally */
+  align-items: center;         /* Align vertically */
+  gap: 30px;                   /* Space between tabs */
+  margin: 30px auto 20px;
+  flex-wrap: wrap;             /* Ensure mobile responsiveness */
+}
+
+/* Tab Links */
+.tab {
+  font-weight: 600;
+  font-size: 16px;
+  padding: 8px 16px;
+  border-radius: 6px;
+  color: #007bff;
+  background-color: #e9ecef;
+  text-decoration: none;
+  transition: background-color 0.2s ease;
+}
+
+.tab:hover {
+  background-color: #d6d8db;
+  text-decoration: none;
+}
+.tab.active {
+  background-color: #49637f;
+  color: white;
+}
+
+
+
+/* To-Do List Styling */
+.todo-list {
+  margin-top: 20px;
+  list-style: none;
+  padding: 0;
+}
+
+.todo-item {
+  padding: 12px;
+  background: #f8f9fa;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 6px;
+}
+.todo-item span {
+  flex: 1;
+  text-align: left;
+  padding-right: 20px;
+}
+
+
+.todo-item.completed {
+  text-decoration: line-through;
+  color: #28a745;
+}
+
+/* To-Do Buttons */
+.btn.complete-btn {
+  background: #28a745;
+  color: white;
+  padding: 6px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn.complete-btn:hover {
+  background: #1e7e34;
+}
+
+.btn.delete-btn {
+  background: #dc3545;
+  color: white;
+  padding: 6px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn.delete-btn:hover {
+  background: #a71d2a;
+}
